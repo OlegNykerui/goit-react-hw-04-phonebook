@@ -1,5 +1,6 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
+
 import { Button, Form, Field, ErrorMessage } from './Form.styled';
 
 export const ContactForm = ({ onSubmit }) => {

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import nextId from 'react-id-generator';
 import ContactItem from './ContactItem';
+
 import { List } from '../Form/Form.styled';
 
 const ContactsList = ({ contacts, deleteButton }) => {

@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import nextId from 'react-id-generator';
+import { useState, useEffect } from 'react';
 
 import ContactsList from './Contacts/ContactsList';
 import ContactForm from './Form/ContactForm';
@@ -13,11 +13,11 @@ const abonents = [
 ];
 
 export const App = () => {
+  const [filter, setFilter] = useState('');
+
   const [contacts, setContacts] = useState(
     JSON.parse(localStorage.getItem('contacts')) || abonents
   );
-
-  const [filter, setFilter] = useState('');
 
   useEffect(() => {
     localStorage.setItem('contacts', JSON.stringify(contacts));
